@@ -37,6 +37,14 @@ body {
     color: #fff;
   }
   
+  .portfolioGrid {
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
   #heroGrid {
     display: flex;
     justify-content: space-between;
@@ -46,7 +54,7 @@ body {
   
   .heroGridArea {
     flex: 1;
-    padding: 20px;
+    padding: 5px;
     background-color: darkslategrey;
     color: azure;
     margin: 0 10px;
@@ -59,38 +67,25 @@ body {
     text-align: center;
     padding: 20px 0;
   }
-  
-  #categoryGrid {
-    font-family: 'Calibri', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+
+  .catergory-list {
+    color: azure;
     align-items: center;
-    flex-wrap: row;
-    padding: 20px 20px 20px 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    text-align: center
   }
-  
+
   .card {
-    color: azure;
-    position: static;
-    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
+    justify-content: space-evenly;
+    background-color: darkslategrey;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  
-  .card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  .categoryGridArea img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .categoryGridArea .heading {
-    color: azure;
-  }
-  
+
   .footer {
     background-color: darkslategrey;
     color: #fff;
