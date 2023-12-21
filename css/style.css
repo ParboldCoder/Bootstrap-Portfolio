@@ -1,97 +1,89 @@
-body {
-    background-color: darkslategrey;
+/* Reset some Bootstrap default styles */
+body, h1, h2, h3, p, a {
     font-family: 'Calibri', sans-serif;
-    margin: 0;
-    padding: 0;
+    color: azure;
   }
   
-  #navBar {
+  body {
     background-color: darkslategrey;
-    color: azure;
   }
   
-  #navigation {
-    color: azure;
+#navBar {
     display: flex;
     justify-content: space-between;
-    align-items: top;
-    min-height: 50px;
-    padding: 20px;
-    padding-top: 10px;
-  }
-  
-  #logo img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    align-items: top-center;
+    background-color: darkslategray;
+    padding: 10px;
   }
 
-  
-  .text-container {
-    display: flex;
-  }
-  
-  .text-container p {
+  .text-container a {
+    display: inline-block;
+    justify-items: center;
+    color: azure;
     margin: 0;
-    padding: 15px;
-    color: #fff;
+    padding: 10px;
   }
   
-  .portfolioGrid {
-    display: flex;
-    justify-self: space-between;
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-  }
+  .avatar {
+    display: inline;
+    border: 5px solid black;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+  .avatar:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px hsla(194, 100%, 47%, 0.6);
+}
 
   #heroGrid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 20px;
+    padding: 5px;
+    text-align: center;
   }
   
-  .heroGridArea {
-    flex: 1;
+  .heroGridArea img {
+    width: 35%;
+    height: auto;
+  }
+
+  #headline {
+    margin-top: 5px;
     padding: 5px;
-    background-color: darkslategrey;
-    color: azure;
-    margin: 0 10px;
-    text-align: center;
   }
   
   .subHeading {
-    background-color: darkslategrey;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
+    margin: 20px;
   }
-
-  .catergory-list {
-    color: azure;
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    text-align: center
-  }
-
+  
   .card {
-    display: block;
-    justify-content: space-evenly;
-    background-color: darkslategrey;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    background-color: darkslategray;
+    color: azure;
+    text-align: center;
   }
 
+  .card img {
+    border-radius: 5px;
+  }
+  .card-container {
+    position: relative;
+  
+  }
+
+  .cardContainer :hover {
+    transform: scale(1.0002);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+  }
+  
   .footer {
-    background-color: darkslategrey;
-    color: #fff;
     text-align: center;
     padding: 20px;
-    justify-content: space-evenly;
+    position: relative;
   }
   
   .contact-icons {
@@ -102,13 +94,15 @@ body {
   .contact-icons img {
     display: inline-block;
     position: top;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     padding: 10px;
     border-radius: 25%;
   }
   
   .contact-icons img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
   
