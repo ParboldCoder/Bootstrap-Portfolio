@@ -70,11 +70,15 @@ body, h1, h2, h3, p, a {
   .card img {
     border-radius: 5px;
   }
+
+  .card-body {
+    padding: 10px;
+    
+  }
   .card-container {
     position: relative;
   
   }
-
   .cardContainer :hover {
     transform: scale(1.0002);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
