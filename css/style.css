@@ -61,10 +61,14 @@ body, h1, h2, h3, p, a {
   }
   /** An attempt to have the cards raise slightly when hovered and have a shadow **/ 
   .card {
-    margin: 25px;
     background-color: darkslategray;
     color: azure;
     text-align: center;
+  }
+
+  .card:hover {
+    transform: scale(1.0002);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
   }
 
   .card img {
@@ -73,17 +77,11 @@ body, h1, h2, h3, p, a {
 
   .card-body {
     padding: 10px;
-    
   }
   .card-container {
     position: relative;
   
   }
-  .cardContainer :hover {
-    transform: scale(1.0002);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
-  }
-  
 
   /* Headers and Footers I have learned how to mange and display these with ease, however when it comes to text they are not as easy to manage. */
   .footer {
