@@ -7,7 +7,7 @@ body, h1, h2, h3, p, a {
   body {
     background-color: darkslategrey;
   }
-  
+  /*** After many attempts I successfully had the text go to the Top Right corner of the screen ***/
 #navBar {
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,7 @@ body, h1, h2, h3, p, a {
     text-align: center;
     margin: 20px;
   }
-  
+  /** An attempt to have the cards raise slightly when hovered and have a shadow **/ 
   .card {
     margin: 25px;
     background-color: darkslategray;
@@ -84,6 +84,8 @@ body, h1, h2, h3, p, a {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
   }
   
+
+  /* Headers and Footers I have learned how to mange and display these with ease, however when it comes to text they are not as easy to manage. */
   .footer {
     text-align: center;
     padding: 20px;
